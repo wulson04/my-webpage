@@ -1,15 +1,19 @@
 *::after,
 *::before {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   --red: red;
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 html,
@@ -24,4 +28,3 @@ body {
   position: relative;
   background-color: var(--red);
 }
-/*# sourceMappingURL=style.css.map */
